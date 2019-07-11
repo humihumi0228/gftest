@@ -18,5 +18,17 @@ public class A extends Actor
             setRotation(180);
             move(1);
         }
-    }    
+        if( Greenfoot.isKeyDown( "down" ) ){
+            setRotation(90);
+            move(1);
+        }
+        if( Greenfoot.isKeyDown( "right" ) ){
+            setRotation(0);
+            move(1);
+        }
+        if( Greenfoot.isKeyDown( "up" ) ){
+            setRotation(-90);
+            move(1);
+        }
+    }
 }
